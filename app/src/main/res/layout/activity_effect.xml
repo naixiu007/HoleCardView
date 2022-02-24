@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_effect"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#DFDFDF">
+
+        <com.ctop007.holeCard.HoleCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:hc_dash_margin_end="5dp"
+            app:hc_dash_margin_start="5dp"
+            app:hc_dash_visible="true"
+            app:hc_hole_offset="0dp"
+            app:hc_hole_radius="12dp"
+            app:hc_offset="30dp"
+            app:hc_orientation="horizontal"
+            app:hc_radius="12dp"
+            app:hc_startSide="start" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_console"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:text="属性预览"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="方向(hc_orientation)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_orientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp">
+
+                <RadioButton
+                    android:id="@+id/rb_orientation_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:paddingHorizontal="15dp"
+                    android:text="水平" />
+
+                <RadioButton
+                    android:id="@+id/rb_orientation_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:text="竖直" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="卡片圆角(hc_radius) [12]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_radius"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="100"
+                android:min="0"
+                android:progress="12" />
+
+            <TextView
+                android:id="@+id/tv_holeRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="穿孔圆角(hc_hole_radius) [12]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_hole_radius"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="100"
+                android:min="0"
+                android:progress="12" />
+
+            <TextView
+                android:id="@+id/tv_startSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="开始侧边(hc_startSide)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_startSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp">
+
+                <RadioButton
+                    android:id="@+id/rb_side_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:paddingHorizontal="15dp"
+                    android:text="开始边" />
+
+                <RadioButton
+                    android:id="@+id/rb_side_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:text="结束边" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_offset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="位置偏移(hc_offset) [100]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_offset"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="600"
+                android:min="0"
+                android:progress="100" />
+
+            <TextView
+                android:id="@+id/tv_holeOffset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="穿孔偏移(hc_hole_offset) [0]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_hole_offset"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="30"
+                android:min="-30"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_holeStartMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="开始孔偏移(hc_dash_margin_start) [5]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_holeStartMargin"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="50"
+                android:min="0"
+                android:progress="5" />
+
+            <TextView
+                android:id="@+id/tv_holeEndMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="结束孔偏移(hc_dash_margin_end) [5]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_holeEndMargin"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="50"
+                android:min="0"
+                android:progress="5" />
+
+            <TextView
+                android:id="@+id/tv_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="显示虚线(hc_dash_visible)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:checked="true"
+                android:text="是否显示虚线" />
+
+            <TextView
+                android:id="@+id/tv_dashRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="虚线半径(hc_dash_radius) [3]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_dashRadius"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="10"
+                android:min="0"
+                android:progress="3" />
+
+            <TextView
+                android:id="@+id/tv_dashGap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="虚线间隙(hc_dash_gap) [5]"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sw_dashGap"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:max="10"
+                android:min="0"
+                android:progress="5" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

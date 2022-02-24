@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <com.ctop007.holeCard.HoleCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:hc_color="@color/white"
+        app:hc_dash_color="#F1F1F1"
+        app:hc_dash_gap="8dp"
+        app:hc_dash_margin_end="10dp"
+        app:hc_dash_margin_start="10dp"
+        app:hc_dash_radius="4dp"
+        app:hc_dash_visible="true"
+        app:hc_hole_offset="-6dp"
+        app:hc_hole_radius="15dp"
+        app:hc_offset="180dp"
+        app:hc_orientation="vertical"
+        app:hc_radius="12dp"
+        app:hc_startSide="start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="这个杀手不太冷静"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/cardView"
+        app:layout_constraintTop_toTopOf="@id/cardView" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="国语2D 2张"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="今天 02-11"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_info" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="21:25~23:14"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_day" />
+
+    <TextView
+        android:id="@+id/tv_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="18号激光厅"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_day"
+        app:layout_constraintTop_toTopOf="@id/tv_day" />
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="6排06座 | 6排07座"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tv_room"
+        app:layout_constraintTop_toBottomOf="@id/tv_room" />
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:layout_margin="20dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/image"
+        app:layout_constraintRight_toRightOf="@id/cardView"
+        app:layout_constraintTop_toTopOf="@id/cardView" />
+
+    <TextView
+        android:id="@+id/tv_code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="取电影票"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/code"
+        app:layout_constraintLeft_toLeftOf="@id/cardView"
+        app:layout_constraintRight_toRightOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/tv_code_title" />
+
+    <TextView
+        android:id="@+id/tv_code_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_code_frame"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="15dp"
+        android:text="2022 0211 4684 9701"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/cardView"
+        app:layout_constraintLeft_toLeftOf="@id/cardView"
+        app:layout_constraintRight_toRightOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/iv_code" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

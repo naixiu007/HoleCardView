@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ctop007.holeCard.HoleCardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            app:hc_color="@color/white"
+            app:hc_dash_color="#F1F1F1"
+            app:hc_dash_gap="1dp"
+            app:hc_dash_margin_end="10dp"
+            app:hc_dash_margin_start="10dp"
+            app:hc_dash_radius="1dp"
+            app:hc_dash_visible="true"
+            app:hc_hole_radius="8dp"
+            app:hc_offset="100dp"
+            app:hc_orientation="horizontal"
+            app:hc_radius="8dp"
+            app:hc_startSide="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ctop007.holeCard.HoleCardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            app:hc_color="@color/white"
+            app:hc_dash_color="#F1F1F1"
+            app:hc_dash_gap="8dp"
+            app:hc_dash_margin_end="10dp"
+            app:hc_dash_margin_start="10dp"
+            app:hc_dash_radius="4dp"
+            app:hc_dash_visible="true"
+            app:hc_hole_radius="8dp"
+            app:hc_offset="100dp"
+            app:hc_orientation="horizontal"
+            app:hc_radius="8dp"
+            app:hc_startSide="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ctop007.holeCard.HoleCardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            app:hc_color="@color/white"
+            app:hc_dash_color="#009688"
+            app:hc_dash_gap="4dp"
+            app:hc_dash_margin_end="10dp"
+            app:hc_dash_margin_start="10dp"
+            app:hc_dash_radius="1dp"
+            app:hc_dash_visible="true"
+            app:hc_hole_radius="4dp"
+            app:hc_offset="100dp"
+            app:hc_orientation="horizontal"
+            app:hc_radius="8dp"
+            app:hc_startSide="start"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ctop007.holeCard.HoleCardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            app:hc_color="@color/white"
+            app:hc_dash_color="#009688"
+            app:hc_dash_gap="4dp"
+            app:hc_dash_margin_end="10dp"
+            app:hc_dash_margin_start="10dp"
+            app:hc_dash_radius="1dp"
+            app:hc_dash_visible="true"
+            app:hc_hole_offset="8dp"
+            app:hc_hole_radius="12dp"
+            app:hc_offset="100dp"
+            app:hc_orientation="horizontal"
+            app:hc_radius="8dp"
+            app:hc_startSide="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ctop007.holeCard.HoleCardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            app:hc_color="@color/white"
+            app:hc_dash_visible="false"
+            app:hc_hole_offset="-8dp"
+            app:hc_hole_radius="12dp"
+            app:hc_offset="100dp"
+            app:hc_orientation="horizontal"
+            app:hc_radius="8dp"
+            app:hc_startSide="start"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+
+</LinearLayout>

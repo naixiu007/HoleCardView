@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HoleCardView">
+
+        <!--卡片圆角-->
+        <attr name="hc_radius" format="dimension|reference" />
+        <attr name="hc_color" format="color|reference" />
+        <!--孔的半径-->
+        <attr name="hc_hole_radius" format="dimension|reference" />
+        <!--孔的偏移量,如果等于孔的半径 将会绘制一个完整的圆-->
+        <attr name="hc_hole_offset" format="dimension|reference" />
+
+        <!--孔\虚线相对于底部或右侧的偏移量-->
+        <attr name="hc_offset" format="dimension|reference" />
+
+        <!--方向 -->
+        <attr name="hc_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <!--开始方向-->
+        <attr name="hc_startSide" format="enum">
+            <enum name="start" value="0" />
+            <enum name="end" value="1" />
+        </attr>
+
+        <!--虚线是否可视-->
+        <attr name="hc_dash_visible" format="boolean|reference" />
+        <!--虚线半径-->
+        <attr name="hc_dash_radius" format="dimension|reference" />
+        <!--虚线间隙-->
+        <attr name="hc_dash_gap" format="dimension|reference" />
+        <!--虚线颜色-->
+        <attr name="hc_dash_color" format="color|reference" />
+        <!--虚线开始边距-->
+        <attr name="hc_dash_margin_start" format="dimension|reference" />
+        <!--虚线结束边距-->
+        <attr name="hc_dash_margin_end" format="dimension|reference" />
+
+    </declare-styleable>
+
+</resources>
