@@ -11,14 +11,16 @@
 
 ## Preview
 
-<img src="https://github.com/ctop007/HoleCardView/blob/master/preview/p2.jpeg?raw=true" style="zoom:25%;" /><img src="https://github.com/ctop007/HoleCardView/blob/master/preview/p1.jpeg?raw=true" style="zoom:25%;" />
-<img src="https://github.com/ctop007/HoleCardView/blob/master/preview/p3.jpeg?raw=true" style="zoom:25%;" /><img src="https://github.com/ctop007/HoleCardView/blob/master/preview/p4.jpeg?raw=true" style="zoom:25%;" />
-
+<dev>
+<img src="./preview/p2.jpeg" width="245px" height="503px"/><img src="./preview/p1.jpeg" width="245px" height="503px"/>
+<br/>
+<img src="./preview/p3.jpeg" width="245px" height="503px"/><img src="./preview/p4.jpeg" width="245px" height="503px"/>
+</dev>
 
 
 ## Simple Demo
 
-<img src="https://github.com/ctop007/HoleCardView/blob/master/preview/oSgh.png?raw=true" />
+<img src="./preview/oSgh.png" width="200px" height="200px"/>
 
 或者 [点击下载](https://github.com/ctop007/HoleCardView/raw/master/preview/app-debug-v1.0.0.apk)
 
