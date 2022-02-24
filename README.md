@@ -11,11 +11,14 @@
 
 ## Preview
 
-<dev>
-<img src="./preview/p2.jpeg" width="245px" height="503px"/><img src="./preview/p1.jpeg" width="245px" height="503px"/>
-<br/>
-<img src="./preview/p3.jpeg" width="245px" height="503px"/><img src="./preview/p4.jpeg" width="245px" height="503px"/>
-</dev>
+<div>
+<img src="./preview/p2.jpeg" width="350px" height="719px"/>
+<img src="./preview/p1.jpeg" width="350px" height="719px"/>
+</div>
+<div>
+<img src="./preview/p3.jpeg" width="350px" height="719px"/>
+<img src="./preview/p4.jpeg" width="350px" height="719px"/>
+</div>
 
 
 ## Simple Demo
